@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080808" />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      name="description"
+      content="NOVA est un studio digital indépendant en France. Applications sur mesure et production vidéo, de l’idée au lancement."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NOVA — Studio digital et créatif" />
+    <meta
+      property="og:description"
+      content="NOVA est un studio digital indépendant en France. Applications sur mesure et production vidéo, de l’idée au lancement."
+    />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="ar_AR" />
+    <title>NOVA — Studio digital et créatif</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "NOVA",
+        "description": "Studio digital indépendant en France. Applications sur mesure et production vidéo.",
+        "areaServed": ["FR", "Worldwide"],
+        "knowsLanguage": ["fr", "en", "ar"]
+      }
+    </script>
+    <script>
+      (function () {
+        var seg = location.pathname.split("/")[1];
+        if (seg === "ar") {
+          document.documentElement.lang = "ar";
+          document.documentElement.dir = "rtl";
+        } else if (seg === "en") {
+          document.documentElement.lang = "en";
+          document.documentElement.dir = "ltr";
+        } else if (seg === "fr") {
+          document.documentElement.lang = "fr";
+          document.documentElement.dir = "ltr";
+        }
+      })();
+    </script>
+    <style>
+      html,
+      body {
+        background: #080808;
+        color: #f4f1ea;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Activez JavaScript pour afficher le site NOVA.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
